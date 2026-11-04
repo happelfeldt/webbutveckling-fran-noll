@@ -1,0 +1,16 @@
+body {
+  background-color: #eef5ff;
+  color: #1e293b;
+  font-family: Arial, sans-serif;
+  max-width: 680px;
+  margin: 40px auto;
+  padding: 24px;
+}
+h1 { color: #155e75; }
+p { line-height: 1.6; }
+.viktigt {
+  background-color: #d9f1f4;
+  border-left: 4px solid #087f8c;
+  padding: 12px;
+}
+img { max-width: 100%; height: auto; }

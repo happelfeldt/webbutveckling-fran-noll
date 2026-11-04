@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>Webbverkstaden – webbutveckling steg för steg</title>
+  <link rel="stylesheet" href="assets/app.css">
+  <script src="assets/lessons.js" defer></script>
+  <script src="assets/image-data.js" defer></script>
+  <script src="assets/app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#lektion">Hoppa till lektionen</a>
+  <header class="topbar">
+    <div class="top-content">
+      <div class="brand"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>Webbverkstaden</span></div>
+      <div class="top-actions">
+        <a href="pdf/Anton_webbutveckling_steg_for_steg.pdf" target="_blank" rel="noopener">Öppna PDF-häftet</a>
+        <label for="text-size" class="small">Textstorlek</label>
+        <select id="text-size" aria-label="Textstorlek">
+          <option value="1">Normal</option>
+          <option value="1.15">Större</option>
+          <option value="1.3">Störst</option>
+        </select>
+      </div>
+    </div>
+  </header>
+  <main class="page">
+    <section class="welcome" aria-label="Introduktion">
+      <div><p class="eyebrow">10 PASS + BONUS · HELT OFFLINE</p>
+      <h1>En sak i taget.</h1>
+      <p>Här tränar du webbutveckling. Du behöver inte kunna något innan.</p></div>
+      <div class="welcome-note"><strong>Så gör du</strong><span>1. Läs uppgiften<br>2. Ändra koden<br>3. Klicka <b>Visa resultat</b></span></div>
+    </section>
+    <section class="course">
+      <aside class="sidebar" aria-label="Välj lektion">
+        <div class="sidebar-head"><h2>Dina lektioner</h2><p id="progress-text">0 av 11 klara</p></div>
+        <div class="progress-track" role="progressbar" aria-label="Avklarade lektioner" aria-valuemin="0" aria-valuemax="11" aria-valuenow="0" id="progress-track"><span id="progress-fill"></span></div>
+        <nav id="lesson-list" aria-label="Lektioner"></nav>
+        <div class="sidebar-help"><strong>Viktigt</strong><p>Det är okej att göra samma pass flera gånger. Dina ändringar sparas på den här datorn.</p></div>
+      </aside>
+      <section class="content" id="lektion" aria-labelledby="lesson-title">
+        <div class="lesson-head">
+          <span id="lesson-count" class="lesson-number">PASS 1 AV 10</span>
+          <span class="topic" id="lesson-topic">HTML</span>
+          <h2 id="lesson-title">Din första webbsida</h2>
+          <p class="lesson-goal" id="lesson-goal"></p>
+        </div>
+        <section class="task-card" aria-labelledby="task-title">
+          <h3 id="task-title">Gör så här</h3>
+          <ol id="steps"></ol>
+          <div class="task-code"><span>Din uppgift</span><pre id="try-this"></pre></div>
+          <p class="expect"><strong>Så ska det se ut:</strong> <span id="expected"></span></p>
+        </section>
+        <div class="workspace-head"><h3>Din kod</h3><p>Ändra i den vita rutan nedan.</p></div>
+        <section class="workspace" aria-label="Kod och resultat">
+          <div class="editor-pane">
+            <div class="editor-tabs" role="tablist" aria-label="Välj kodtyp">
+              <button type="button" role="tab" id="tab-html" aria-controls="editor-panel" data-tab="html">HTML</button>
+              <button type="button" role="tab" id="tab-css" aria-controls="editor-panel" data-tab="css">CSS</button>
+              <button type="button" role="tab" id="tab-js" aria-controls="editor-panel" data-tab="js">JavaScript</button>
+            </div>
+            <div id="editor-panel" role="tabpanel" aria-label="Kodredigerare">
+              <label for="code-editor" class="visually-hidden">Skriv kod här</label>
+              <textarea id="code-editor" spellcheck="false" autocapitalize="off" autocomplete="off" autocorrect="off" aria-describedby="code-help"></textarea>
+            </div>
+            <p id="code-help" class="editor-tip">Tips: Du kan ångra med Ctrl + Z.</p>
+            <div class="editor-actions">
+              <button type="button" id="run" class="primary">▶ Visa resultat</button>
+              <button type="button" id="check" class="secondary">✓ Kontrollera</button>
+            </div>
+          </div>
+          <div class="preview-pane">
+            <div class="preview-header"><strong>Så ser sidan ut</strong><span>Förhandsvisning</span></div>
+            <iframe id="preview" title="Så ser din webbsida ut" sandbox="allow-scripts" referrerpolicy="no-referrer"></iframe>
+          </div>
+        </section>
+        <div id="feedback" class="feedback" role="status" aria-live="polite">Börja med att ändra koden. Klicka sedan på <strong>Visa resultat</strong>.</div>
+        <section class="help-section" aria-label="Tips och förklaring">
+          <button type="button" id="hint-toggle" class="inline-action" aria-expanded="false">Visa ett tips</button>
+          <p id="hint-text" class="hidden tip-box"></p>
+          <button type="button" id="explain-toggle" class="inline-action" aria-expanded="false">Vad betyder det här?</button>
+          <p id="explain-text" class="hidden tip-box"></p>
+          <button type="button" id="solution-toggle" class="inline-action" aria-expanded="false">Visa facit för den här kodfliken</button>
+          <div id="solution-box" class="hidden solution-box"><pre id="solution-code"></pre><button type="button" id="use-solution" class="secondary">Kopiera facit till min kod</button></div>
+        </section>
+        <div class="bottom-actions">
+          <button type="button" id="prev" class="secondary">← Föregående</button>
+          <button type="button" id="reset" class="secondary">Börja om detta pass</button>
+          <button type="button" id="download" class="secondary">↓ Spara min webbsida</button>
+          <button type="button" id="next" class="primary">Nästa pass →</button>
+        </div>
+        <div class="small-print">Dina ändringar sparas enbart i webbläsaren på den här datorn. Du behöver inte vara uppkopplad. Snabbkontrollen letar efter vissa delar i koden, inte efter alla möjliga rätta lösningar.</div>
+      </section>
+    </section>
+    <footer class="footer">Vill du arbeta i vanliga filer? Öppna <code>min-webb/index.html</code> och följ PDF-häftet. Färdigt exempel finns i <code>facit/</code>.</footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,17 @@
+WEBBUTVECKLING – BÖRJA HÄR
+===========================
+
+1. Dubbelklicka på filen: starta-har.html
+2. Börja med pass 1.
+3. Läs ett steg i taget.
+4. Ändra något i koden.
+5. Klicka på "Visa resultat".
+6. Klicka på "Kontrollera".
+
+PDF-häftet finns i mappen pdf.
+
+Om du vill lära dig med riktiga filer i VS Code:
+Öppna mappen min-webb och följ PDF:en från pass 2.
+
+Du kan göra om varje pass hur många gånger du vill.
+Ingen installation eller internetuppkoppling behövs.
