@@ -46,19 +46,8 @@ Det går bra att testa i verkstaden först och sedan göra samma sak i filerna.
 
 Koden körs i webbläsaren. Verkstaden skickar inte elevuppgifter till en server och använder inga externa JavaScript-bibliotek. Förhandsvisningen körs i en isolerad iframe. Övningspaketet innehåller inte personnummer, betyg eller andra känsliga elevuppgifter.
 
-## Publicera på GitHub
+## Ladda ner från GitHub
 
-Skapa ett **public** repository i GitHub, exempelvis `webbutveckling-fran-noll`. Ladda upp filerna i denna mapp, **inte själva ZIP-filen som enda innehåll**. Därefter finns **Code → Download ZIP** för den som vill hämta hela paketet.
+Öppna [webbutveckling-fran-noll](https://github.com/happelfeldt/webbutveckling-fran-noll) och välj **Code → Download ZIP**. Packa upp filerna och dubbelklicka på `starta-har.html`.
 
-Om du använder Git på datorn:
-
-```bash
-git init
-git add .
-git commit -m "Add offline web development starter course"
-git branch -M main
-git remote add origin https://github.com/DITT-KONTO/webbutveckling-fran-noll.git
-git push -u origin main
-```
-
-Byt ut `DITT-KONTO` mot ditt GitHub-användarnamn. Skriv inte med privata personuppgifter i repot. För enbart uppladdning via webbläsaren behövs inga Git-kommandon.
+Paketet är gratis att ladda ner och fungerar utan installation. Om du vill ändra övningarna kan du även öppna mappen `min-webb` i VS Code.
